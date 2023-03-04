@@ -8,7 +8,10 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot + Tanzu!";
+		String returnResult = "<font face='Verdana' size='10'>Greetings from Spring Boot + Tanzu! </font><br>";
+		String addedResult = "<font face='Arial' size='20' style='background-color:tomato;'>Hey Hey</font><br>";
+		String bcaResult = "";
+		return returnResult + addedResult + bcaResult;
 	}
 
 }
