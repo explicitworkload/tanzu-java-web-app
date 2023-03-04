@@ -8,10 +8,15 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		String returnResult = "<font face='Verdana' size='10'>Selamat Siang Pak Frank, Pak Anton, Ibu Amy & Frank from Spring Boot + Tanzu! </font><br>";
-		String addedResult = "<font face='Arial' size='20' style='background-color:tomato;'> </font><br>";
+
+		String wrapper = "<center>";
+		String returnResult = "<br><font face='Verdana' size='6'>Selamat Siang Pak Frank, Pak Anton, Ibu Amy & Frank from Spring Boot + Tanzu! </font><br>";
+		String addedResult = "<font face='Arial' size='10' style='background-color:tomato;'></font><br>";
 		String bcaResult = "";
-		return returnResult + addedResult + bcaResult;
+		String wrapper2 = "</center>";
+
+		return wrapper + returnResult + addedResult + bcaResult + wrapper2;
+		
 	}
 
 }
