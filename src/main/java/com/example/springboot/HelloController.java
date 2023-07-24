@@ -9,9 +9,8 @@ public class HelloController {
 	@RequestMapping("/")
 	public String index() {
 		String variable0 = "Selamat Datang di VMware Technology Day<br />Best wishes from Spring + Tanzu!";
-		String variable1 = "Test Now!<br/>";
 		
-		return variable0 + variable1;
+		return variable0;
 	}
 
 }
